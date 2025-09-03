@@ -3,7 +3,7 @@ import React from "react";
 export const About = () => {
   return (
     <div className="bg-[#2C3640]">
-      <div className=" py-20 flex items-start max-w-6xl mx-auto">
+      <div className=" pt-30 pb-25 flex items-start max-w-6xl mx-auto">
         <div className=" flex-1/3">
           <div className="">
             <div className="bg-white w-[120px] h-2 "></div>
@@ -27,7 +27,7 @@ export const About = () => {
                 MERN Stack Developer
               </span>
               who loves building dynamic, user-friendly, and scalable web
-              applications. With expertise in
+              applications. With expertise in{" "}
               <span className="font-semibold">
                 MongoDB, Express.js, React, and Node.js
               </span>

@@ -6,7 +6,7 @@ import { Link } from "react-router";
 
 const Works = () => {
   return (
-    <div className="bg-[#F2F6EB] py-40">
+    <div className="bg-[#F2F6EB] pt-28 pb-32">
       <div className="max-w-6xl mx-auto ">
         <div className="">
           <div className="bg-[#2C3640] w-[120px] h-2 "></div>
@@ -68,7 +68,7 @@ const Works = () => {
                 >
                   <ExternalLink size={16} /> Live Link
                 </a>
-                <Link className="px-6 py-2 flex items-center gap-2 border border-[#2D3441] text-[#2D3441] font-semibold hover:bg-[#2D3441] hover:text-white transition duration-200">
+                <Link to={"/detail-1"} className="px-6 py-2 flex items-center gap-2 border border-[#2D3441] text-[#2D3441] font-semibold hover:bg-[#2D3441] hover:text-white transition duration-200">
                   <Info size={16} /> Details
                 </Link>
               </div>
@@ -123,7 +123,7 @@ const Works = () => {
                 >
                   <ExternalLink size={16} /> Live Link
                 </a>
-                <Link className="px-6 py-2 flex items-center gap-2 border border-[#2D3441] text-[#2D3441] font-semibold hover:bg-[#2D3441] hover:text-white transition duration-200">
+                <Link to={"/detail-2"} className="px-6 py-2 flex items-center gap-2 border border-[#2D3441] text-[#2D3441] font-semibold hover:bg-[#2D3441] hover:text-white transition duration-200">
                   <Info size={16} /> Details
                 </Link>
               </div>
@@ -178,7 +178,7 @@ const Works = () => {
                 >
                   <ExternalLink size={16} /> Live Link
                 </a>
-                <Link className="px-6 py-2 flex items-center gap-2 border border-[#2D3441] text-[#2D3441] font-semibold hover:bg-[#2D3441] hover:text-white transition duration-200">
+                <Link to={"/detail-3"} className="px-6 py-2 flex items-center gap-2 border border-[#2D3441] text-[#2D3441] font-semibold hover:bg-[#2D3441] hover:text-white transition duration-200">
                   <Info size={16} /> Details
                 </Link>
               </div>

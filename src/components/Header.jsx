@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router";
 
 export const Header = () => {
@@ -47,16 +46,16 @@ export const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-[25px] font-[600]">
-            Ridita . 
+          <a className="btn btn-ghost text-[25px] font-[700] text-[#2C3640]">
+            Ridita .
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li className="text-[16px] font-semibold text-[#7e807c]">
-              <Link>Home</Link>
+              <Link to={"/"}>Home</Link>
             </li>
-            <li className="text-[16px] font-semibold text-[#7e807c]">
+            <li to={"/skills"} className="text-[16px] font-semibold text-[#7e807c]">
               <Link>Skills</Link>
             </li>
             <li className="text-[16px] font-semibold text-[#7e807c]">
@@ -65,7 +64,13 @@ export const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a  className=" px-5 py-2  font-[600] border-2 text-gray-600">Get Resume</a>
+          <a
+            target="_blank"
+            href="https://drive.google.com/file/d/19BPjtrV2CqZlgi1DOEvBGYsFaFJcLXSr/view?usp=sharing"
+            className=" px-5 py-2  font-[600] border-2 text-gray-600"
+          >
+            Get Resume
+          </a>
         </div>
       </div>
     </div>

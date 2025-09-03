@@ -21,7 +21,7 @@ import "../../src/index.css";
 const Skills = () => {
   return (
     <div
-      className="py-20 bg-[#2C3640]
+      className="pt-20 pb-28 bg-[#2C3640]
     "
     >
       <div className="max-w-6xl mx-auto">
