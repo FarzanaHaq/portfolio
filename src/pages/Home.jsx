@@ -6,9 +6,7 @@ import Works from "../components/Works";
 import { About } from "../components/About";
 import { Header } from "../components/Header";
 
-
 const Home = () => {
-
   return (
     <div className="poppins-regular">
       <Banner></Banner>

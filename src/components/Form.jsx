@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaArrowRight, FaGithub } from "react-icons/fa";
-import emailPhoto from "../assets/5849.jpg";
+import { motion } from "framer-motion";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -30,20 +30,26 @@ const Form = () => {
   };
 
   return (
-    <div className="bg-[#F2F6EB] pb-30 pt-30">
-      <div className="max-w-6xl mx-auto mb-10">
+    <div className="bg-[#F2F6EB]  py-20 lg:py-30">
+      <div className="max-w-6xl mx-auto lg:mb-10 pl-8 lg:pl-0">
         <div className="bg-[#2C3640] w-[120px] h-2 "></div>
         <div className="mb-2">
-          <h1 className=" text-[50px] font-[700] text-[#2C3640] mt-5 leading-15">
+          <h1 className="text-[30px] lg:text-[50px] font-[700] text-[#2C3640] mt-5 lg:leading-15">
             LET'S CONNECT
           </h1>
         </div>
       </div>
-      <div className="flex max-w-6xl mx-auto gap-5">
-        <div className="flex-1/2">
+      <div className="lg:flex max-w-6xl mx-auto gap-5 p-5">
+        <motion.div
+          className="flex-1/2"
+          initial={{ x: -100, opacity: 0 }} // starts lower
+          whileInView={{ x: 0, opacity: 1 }} // animates upward when in view
+          transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <div className="shadow-xl/30 p-8 mb-5">
-            <h1 className="mt-5 text-[35px] font-[600] text-[#2D3441] leading-12">
-              Let's create something <br /> amazing together!
+            <h1 className="mt-5 text-[23px] lg:text-[35px] font-[600] text-[#2D3441] lg:leading-12">
+              Let's create something amazing together!
             </h1>
             <p className=" text-[17px] font-[600] text-[#71746C] mt-2">
               Feel free to reach out for projects, collaborations or web <br />
@@ -53,35 +59,47 @@ const Form = () => {
               <div className="border-b-2 p-5 border-[#2D3441]">
                 <div className="flex items-center gap-2">
                   <h1 className="text-[#2D3441] text-[40px] font-[600]">01</h1>
-                  <p className="text-[#71746c] text-[25px] ">Email</p>
+                  <p className="text-[#71746c] text-[20px] lg:text-[25px] ">
+                    Email
+                  </p>
                 </div>
-                <p className="text-[#2D3441] text-[20px]">
+                <p className="text-[#2D3441] lg:text-[20px]">
                   farzanaridita97@gmail.com
                 </p>
               </div>
               <div className="border-b-2 p-5 border-[#2D3441]">
                 <div className="flex items-center gap-2">
                   <h1 className="text-[#2D3441] text-[40px] font-[600]">02</h1>
-                  <p className="text-[#71746c] text-[25px]">Phone</p>
+                  <p className="text-[#71746c] text-[20px] lg:text-[25px]">
+                    Phone
+                  </p>
                 </div>
-                <p className="text-[#2D3441] text-[20px]">+88 01911344474</p>
+                <p className="text-[#2D3441] lg:text-[20px]">+88 01911344474</p>
               </div>
               <div className="p-5">
                 <div className="flex items-center gap-2">
                   <h1 className="text-[#2D3441] text-[40px] font-[600]">03</h1>
-                  <p className="text-[#71746c] text-[25px]">Location</p>
+                  <p className="text-[#71746c] text-[20px] lg:text-[25px]">
+                    Location
+                  </p>
                 </div>
-                <p className="text-[#2D3441] text-[20px]">Dhaka, Bangladesh</p>
+                <p className="text-[#2D3441] lg:text-[20px]">Dhaka, Bangladesh</p>
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex-1/2">
+        </motion.div>
+        <motion.div
+          className="flex-1/2"
+          initial={{ x: 100, opacity: 0 }} // starts lower
+          whileInView={{ x: 0, opacity: 1 }} // animates upward when in view
+          transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <form
             onSubmit={handleSubmit}
             className=" mx-auto space-y-4 pt-6 pb-8 px-10 shadow-xl/30 "
           >
-            <h1 className="text-center text-[#2D3441]  text-[35px] font-bold py-5">
+            <h1 className="text-center text-[#2D3441] text-[23px]  lg:text-[35px] font-bold py-5">
               Send me a message
             </h1>
             <div>
@@ -142,7 +160,7 @@ const Form = () => {
               </button>
             </div>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

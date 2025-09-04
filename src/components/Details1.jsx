@@ -5,12 +5,12 @@ const Details1 = () => {
         <h1 className="text-center font-[700] text-[30px] text-[#2C3640]">
           CampCare
         </h1>
-        <div className="grid grid-cols-2 gap-10 mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10 px-5">
           <div className="">
             <h2 className="text-[#2C3640] font-[700] text-[20px]">
               Description
             </h2>
-            <p className="text-[17px] font-[600] text-[#71746C]">
+            <p className="text-[17px] font-[600] text-[#71746C] text-justify">
               A full-stack web application designed to simplify the organization
               and participation of medical camps. This system provides separate
               dashboards for Organizers and Participants, allowing efficient

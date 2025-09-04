@@ -3,7 +3,7 @@ import { Link } from "react-router";
 export const Header = () => {
   return (
     <div>
-      <div className="navbar bg-[#F2F6EB] shadow-sm px-20 pt-3">
+      <div className="navbar bg-[#F2F6EB] shadow-sm lg:px-20 pt-3">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,25 +28,18 @@ export const Header = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <Link to={"/"}>Home</Link>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <Link to={"/skill"}>Skills</Link>
               </li>
               <li>
-                <a>Item 3</a>
+                {" "}
+                <Link to={"/project"}>Projects</Link>
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-[25px] font-[700] text-[#2C3640]">
+          <a className="btn btn-ghost text-[20px] lg:text-[25px] font-[700] text-[#2C3640]">
             Ridita .
           </a>
         </div>
@@ -55,11 +48,11 @@ export const Header = () => {
             <li className="text-[16px] font-semibold text-[#7e807c]">
               <Link to={"/"}>Home</Link>
             </li>
-            <li to={"/skills"} className="text-[16px] font-semibold text-[#7e807c]">
-              <Link>Skills</Link>
+            <li className="text-[16px] font-semibold text-[#7e807c]">
+              <Link to={"/skill"}>Skills</Link>
             </li>
             <li className="text-[16px] font-semibold text-[#7e807c]">
-              <Link>Projects</Link>
+              <Link to={"/project"}>Projects</Link>
             </li>
           </ul>
         </div>
@@ -67,7 +60,7 @@ export const Header = () => {
           <a
             target="_blank"
             href="https://drive.google.com/file/d/19BPjtrV2CqZlgi1DOEvBGYsFaFJcLXSr/view?usp=sharing"
-            className=" px-5 py-2  font-[600] border-2 text-gray-600"
+            className=" px-2 lg:px-5 py-2  font-[600] border-2 text-gray-600"
           >
             Get Resume
           </a>

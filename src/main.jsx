@@ -4,10 +4,11 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import MainLayout from "./pages/MainLayout";
 import Home from "./pages/Home";
-import Skills from "./components/Skills";
 import Details1 from "./components/Details1";
 import Details2 from "./components/Details2";
 import Details3 from "./components/Details3";
+import Skills from "./components/Skills";
+import Works from "./components/Works";
 
 const router = createBrowserRouter([
   {
@@ -26,10 +27,19 @@ const router = createBrowserRouter([
         path: "/detail-2",
         Component: Details2,
       },
-       {
+      {
         path: "/detail-3",
         Component: Details3,
       },
+      {
+        path: "/skill",
+        Component: Skills,
+      },
+       {
+        path: "/project",
+        Component: Works,
+      },
+
     ],
   },
 ]);

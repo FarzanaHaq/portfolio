@@ -2,17 +2,17 @@ import React from 'react'
 
 const Details2 = () => {
   return (
-     <div className="bg-[#F2F6EB] pb-20">
+     <div className="bg-[#F2F6EB] pb-20 pt-20">
       <div className="max-w-6xl mx-auto ">
         <h1 className="text-center font-[700] text-[30px] text-[#2C3640]">
          WhereIsIt
         </h1>
-        <div className="grid grid-cols-2 gap-10 mt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10 px-5">
           <div className="">
             <h2 className="text-[#2C3640] font-[700] text-[20px]">
               Description
             </h2>
-            <p className="text-[17px] font-[600] text-[#71746C]">
+            <p className="text-[17px] font-[600] text-[#71746C] text-justify">
              This project is a Lost and Found Website, a platform designed to connect individuals who have lost personal belongings with those who may have found them. Users can report lost items, browse found items, and interact to recover their belongings.
             </p>
 

@@ -8,9 +8,8 @@ export const Footer = () => {
     <div className="max-w-6xl mx-auto flex justify-between px-8 pt-10 items-center">
           <div className=" space-x-8 text-[16px]">
         <Link>Home</Link>
-        <Link>Services</Link>
-        <Link>Portfolio</Link>
-        <Link>About Us</Link>
+        <Link>Skills</Link>
+        <Link>Projects</Link>
       </div>
       <div>
         <Link>
