@@ -1,8 +1,11 @@
+import campPhoto from "../assets/camp-photo.jpeg";
+
 const Details1 = () => {
   return (
-    <div className="bg-[#F2F6EB] pb-20 pt-20">
+    <div className="bg-[#F2F6EB] pb-20 pt-10">
       <div className="max-w-6xl mx-auto ">
-        <h1 className="text-center font-[700] text-[30px] text-[#2C3640]">
+        <img src={campPhoto} className="px-5" alt="" />
+        <h1 className="text-center font-[700] text-[30px] text-[#2C3640] mt-13">
           CampCare
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10 px-5">

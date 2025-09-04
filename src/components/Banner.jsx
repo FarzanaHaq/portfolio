@@ -38,7 +38,7 @@ const Banner = () => {
 
         {/* Third line */}
         <motion.p
-          className="text-[18px]  lg:text-[25px] font-medium mt-2 text-[#66686C] w-[310px] lg:w-[600px] text-justify "
+          className="text-[18px] lg:text-[25px] font-medium mt-2 text-[#66686C] w-[310px] lg:w-[620px] text-justify lg:text-left"
           initial={{ x: "100%", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 1 }}

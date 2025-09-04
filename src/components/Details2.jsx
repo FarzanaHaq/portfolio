@@ -1,10 +1,12 @@
-import React from 'react'
+import lostPhoto from "../assets/lost-found.jpeg";
+
 
 const Details2 = () => {
   return (
-     <div className="bg-[#F2F6EB] pb-20 pt-20">
+     <div className="bg-[#F2F6EB] pb-20 pt-10">
       <div className="max-w-6xl mx-auto ">
-        <h1 className="text-center font-[700] text-[30px] text-[#2C3640]">
+           <img src={lostPhoto} className="px-5" alt="" />
+        <h1 className="text-center font-[700] text-[30px] text-[#2C3640] mt-13">
          WhereIsIt
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10 px-5">

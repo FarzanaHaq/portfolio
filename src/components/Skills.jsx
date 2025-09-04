@@ -49,13 +49,7 @@ const Skills = () => {
     "
     >
       <div className="max-w-6xl mx-auto">
-        <motion.div
-          className="pl-8 lg:pl-2"
-          initial={{ y: 100, opacity: 0 }} // starts lower
-          whileInView={{ y: 0, opacity: 1 }} // animates upward when in view
-          transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.2 }}
-        >
+        <div className="pl-8 lg:pl-2">
           <div className="bg-white w-[120px] h-2 mt-10 "></div>
           <div className="mb-2">
             <h1 className="text-[30px] lg:text-[50px] font-[700] text-white mt-5">
@@ -65,7 +59,7 @@ const Skills = () => {
               Things that I have learned so far
             </p>
           </div>
-        </motion.div>
+        </div>
         <div className="px-5">
           <motion.div
             className="grid grid-cols-1 lg:grid-cols-3 mt-10"
@@ -74,7 +68,13 @@ const Skills = () => {
             whileInView="show" // 👈 animate when in view
             viewport={{ once: true, amount: 0.2 }} // 👈 controls scroll trigger
           >
-            <motion.div variants={item} className=" p-10 shadow-xl/30">
+            <motion.div
+              variants={item}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+              className=" p-10 shadow-xl/30"
+            >
               {" "}
               <div className="flex gap-3 items-center">
                 {" "}
@@ -142,7 +142,13 @@ const Skills = () => {
                 </button>{" "}
               </div>{" "}
             </motion.div>
-            <motion.div variants={item} className=" p-10 shadow-xl/30">
+            <motion.div
+              variants={item}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+              className=" p-10 shadow-xl/30"
+            >
               {" "}
               <div className="flex gap-3 items-center">
                 {" "}
@@ -202,7 +208,13 @@ const Skills = () => {
                 </button>{" "}
               </div>{" "}
             </motion.div>
-            <motion.div variants={item} className=" p-10 shadow-xl/30">
+            <motion.div
+              variants={item}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.2 }}
+              className=" p-10 shadow-xl/30"
+            >
               {" "}
               <div className="flex gap-5 items-center">
                 {" "}

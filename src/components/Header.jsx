@@ -39,7 +39,7 @@ export const Header = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-[20px] lg:text-[25px] font-[700] text-[#2C3640]">
+          <a className="text-[20px] lg:text-[25px] font-[700] text-[#2C3640]">
             Ridita .
           </a>
         </div>
@@ -60,7 +60,7 @@ export const Header = () => {
           <a
             target="_blank"
             href="https://drive.google.com/file/d/19BPjtrV2CqZlgi1DOEvBGYsFaFJcLXSr/view?usp=sharing"
-            className=" px-2 lg:px-5 py-2  font-[600] border-2 text-gray-600"
+            className=" px-2 lg:px-5 py-2  font-[600] border-2 text-gray-600 mr-2"
           >
             Get Resume
           </a>

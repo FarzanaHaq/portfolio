@@ -9,13 +9,7 @@ const Works = () => {
   return (
     <div className="bg-[#F2F6EB] pt-28 pb-32 ">
       <div className="max-w-6xl mx-auto ">
-        <motion.div
-          className="pl-6"
-          initial={{ y: 100, opacity: 0 }} // starts lower
-          whileInView={{ y: 0, opacity: 1 }} // animates upward when in view
-          transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.2 }}
-        >
+        <div className="pl-6">
           <div className="bg-[#2C3640] w-[120px] h-2 "></div>
           <div className="mb-2">
             <h1 className="text-[30px] lg:text-[50px] font-[700] text-[#2C3640] mt-5 lg:leading-15">
@@ -25,10 +19,16 @@ const Works = () => {
               Take a look of some of my projects i <br /> have done.
             </p>
           </div>
-        </motion.div>
+        </div>
 
-        <div className="">
-          <div className=" lg:shadow-xl/30 mt-10 lg:mt-20 lg:flex lg:items-center gap-10 lg:h-[500px] px-3">
+        <motion.div
+          className=""
+          initial={{ x: -100, opacity: 0 }} // starts lower
+          whileInView={{ x: 0, opacity: 1 }} // animates upward when in view
+          transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <div className=" lg:shadow-xl/30 mt-10 lg:mt-20 lg:flex lg:items-center gap-10 lg:h-[500px] px-3 lg:px-0">
             <div className="flex-1/2">
               <img className="object-cover" src={campPhoto} alt="" />
             </div>
@@ -83,8 +83,13 @@ const Works = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }} // starts lower
+          whileInView={{ x: 0, opacity: 1 }} // animates upward when in view
+          transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <div className="lg:shadow-xl/30 mt-10 lg:mt-20 lg:flex lg:items-center gap-10 lg:h-[500px] px-5 lg:px-0">
             <div className="flex-1/2">
               <img className="object-cover" src={lostPhoto} alt="" />
@@ -140,8 +145,13 @@ const Works = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ x: -100, opacity: 0 }} // starts lower
+          whileInView={{ x: 0, opacity: 1 }} // animates upward when in view
+          transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <div className="lg:shadow-xl/30 mt-10 lg:mt-20 lg:flex lg:items-center gap-10 lg:h-[500px] px-5 lg:px-0">
             <div className="flex-1/2">
               <img className=" object-cover" src={gardenPhoto} alt="" />
@@ -197,7 +207,7 @@ const Works = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
